@@ -1,0 +1,297 @@
+.book3d {
+  /* .cub-1 styles */
+  /* .cub-2 styles */
+  /* .cub-3 styles */
+  /* .cyl-1 styles */
+}
+
+.book3d [class*="cuboid"] .ft, .book3d [class*="cuboid"] .bk {
+  width: 100%;
+  height: 100%;
+}
+
+.book3d [class*="cuboid"] .bk {
+  left: 100%;
+}
+
+.book3d [class*="cuboid"] .rt {
+  -webkit-transform: rotateY(-90deg) translateX(-50%);
+          transform: rotateY(-90deg) translateX(-50%);
+}
+
+.book3d [class*="cuboid"] .lt {
+  -webkit-transform: rotateY(90deg) translateX(-50%);
+          transform: rotateY(90deg) translateX(-50%);
+}
+
+.book3d [class*="cuboid"] .tp {
+  -webkit-transform: rotateX(90deg) translateY(-50%);
+          transform: rotateX(90deg) translateY(-50%);
+}
+
+.book3d [class*="cuboid"] .bm {
+  -webkit-transform: rotateX(-90deg) translateY(-50%);
+          transform: rotateX(-90deg) translateY(-50%);
+}
+
+.book3d [class*="cuboid"] .lt {
+  left: 100%;
+}
+
+.book3d [class*="cuboid"] .bm {
+  top: 100%;
+}
+
+.book3d [class*="cylinder"] .tp {
+  -webkit-transform: rotateX(90deg) translateY(-50%);
+          transform: rotateX(90deg) translateY(-50%);
+}
+
+.book3d [class*="cylinder"] .bm {
+  -webkit-transform: rotateX(-90deg) translateY(-50%);
+          transform: rotateX(-90deg) translateY(-50%);
+}
+
+.book3d [class*="cylinder"] .tp, .book3d [class*="cylinder"] .bm, .book3d [class*="cylinder"] .tp .photon-shader, .book3d [class*="cylinder"] .bm .photon-shader {
+  border-radius: 50%;
+}
+
+.book3d [class*="cylinder"] .bm {
+  top: 100%;
+}
+
+.book3d .cub-1 {
+  -webkit-transform: translate3D(0em, 0em, 0.04688em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          transform: translate3D(0em, 0em, 0.04688em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity: 1;
+  width: 5em;
+  height: 7.5em;
+  margin: -3.75em 0 0 -2.5em;
+}
+
+.book3d .cub-1 .ft {
+  -webkit-transform: translateZ(0.005em);
+          transform: translateZ(0.005em);
+}
+
+.book3d .cub-1 .bk {
+  -webkit-transform: translateZ(-0.005em) rotateY(180deg);
+          transform: translateZ(-0.005em) rotateY(180deg);
+}
+
+.book3d .cub-1 .rt, .book3d .cub-1 .lt {
+  width: 0.01em;
+  height: 7.5em;
+}
+
+.book3d .cub-1 .tp, .book3d .cub-1 .bm {
+  width: 5em;
+  height: 0.01em;
+}
+
+.book3d .cub-1 .face {
+  background-color: #ffffff;
+}
+
+.book3d .cub-1 .ft {
+  background: url(https://sun9-66.userapi.com/impg/7kSRpjCIseTf2Z0sJKYHdg002Eu4NhiLvVH11g/PEAoftPUXOQ.jpg?size=1280x1280&quality=96&sign=35ae5d3ae4d30a32acc44e6e1e5269f8&type=album);
+}
+
+.book3d .cub-2 {
+  -webkit-transform: translate3D(0em, 0em, -0.1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          transform: translate3D(0em, 0em, -0.1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity: 1;
+  width: 5.1em;
+  height: 7.6em;
+  margin: -3.8em 0 0 -2.55em;
+}
+
+.book3d .cub-2 .ft {
+  -webkit-transform: translateZ(0.05em);
+          transform: translateZ(0.05em);
+}
+
+.book3d .cub-2 .bk {
+  -webkit-transform: translateZ(-0.05em) rotateY(180deg);
+          transform: translateZ(-0.05em) rotateY(180deg);
+}
+
+.book3d .cub-2 .rt, .book3d .cub-2 .lt {
+  width: 0.1em;
+  height: 7.6em;
+}
+
+.book3d .cub-2 .tp, .book3d .cub-2 .bm {
+  width: 5.1em;
+  height: 0.1em;
+}
+
+.book3d .cub-2 .face {
+  background-color: #c00101;
+}
+
+.book3d .cub-3 {
+  -webkit-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity: 1;
+  width: 5em;
+  height: 7.5em;
+  margin: -3.75em 0 0 -2.5em;
+}
+
+.book3d .cub-3 .ft {
+  -webkit-transform: translateZ(0.05em);
+          transform: translateZ(0.05em);
+}
+
+.book3d .cub-3 .bk {
+  -webkit-transform: translateZ(-0.05em) rotateY(180deg);
+          transform: translateZ(-0.05em) rotateY(180deg);
+}
+
+.book3d .cub-3 .rt, .book3d .cub-3 .lt {
+  width: 0.1em;
+  height: 7.5em;
+}
+
+.book3d .cub-3 .tp, .book3d .cub-3 .bm {
+  width: 5em;
+  height: 0.1em;
+}
+
+.book3d .cub-3 .face {
+  background-color: #ffffff;
+}
+
+.book3d .cub-3 .ft {
+  background: url(https://sun9-66.userapi.com/impg/7kSRpjCIseTf2Z0sJKYHdg002Eu4NhiLvVH11g/PEAoftPUXOQ.jpg?size=1280x1280&quality=96&sign=35ae5d3ae4d30a32acc44e6e1e5269f8&type=album);
+}
+
+.book3d .cub-4 {
+  -webkit-transform: translate3D(0em, 0em, 0.12437em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          transform: translate3D(0em, 0em, 0.12437em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  opacity: 1;
+  width: 5.1em;
+  height: 7.6em;
+  margin: -3.8em 0 0 -2.55em;
+}
+
+.book3d .cub-4 .ft {
+  -webkit-transform: translateZ(0.05em);
+          transform: translateZ(0.05em);
+}
+
+.book3d .cub-4 .bk {
+  -webkit-transform: translateZ(-0.05em) rotateY(180deg);
+          transform: translateZ(-0.05em) rotateY(180deg);
+}
+
+.book3d .cub-4 .rt, .book3d .cub-4 .lt {
+  width: 0.1em;
+  height: 7.6em;
+}
+
+.book3d .cub-4 .tp, .book3d .cub-4 .bm {
+  width: 5.1em;
+  height: 0.1em;
+}
+
+.book3d .cub-4 .face {
+  background-color: #c00101;
+}
+
+.book3d .cyl-1 {
+  -webkit-transform: translate3D(-2.5625em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          transform: translate3D(-2.5625em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity: 1;
+  width: 0.375em;
+  height: 7.6em;
+  margin: -3.8em 0 0 -0.1875em;
+}
+
+.book3d .cyl-1 .tp, .book3d .cyl-1 .bm {
+  width: 0.375em;
+  height: 0.375em;
+}
+
+.book3d .cyl-1 .side {
+  width: 0.11059130289630623em;
+  height: 7.6em;
+}
+
+.book3d .cyl-1 .s0 {
+  -webkit-transform: rotateY(12.85714deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(12.85714deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s1 {
+  -webkit-transform: rotateY(38.57143deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(38.57143deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s2 {
+  -webkit-transform: rotateY(64.28571deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(64.28571deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s3 {
+  -webkit-transform: rotateY(90deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(90deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s4 {
+  -webkit-transform: rotateY(115.71429deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(115.71429deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s5 {
+  -webkit-transform: rotateY(141.42857deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(141.42857deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s6 {
+  -webkit-transform: rotateY(167.14286deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(167.14286deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s7 {
+  -webkit-transform: rotateY(192.85714deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(192.85714deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s8 {
+  -webkit-transform: rotateY(218.57143deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(218.57143deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s9 {
+  -webkit-transform: rotateY(244.28571deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(244.28571deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s10 {
+  -webkit-transform: rotateY(270deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(270deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s11 {
+  -webkit-transform: rotateY(295.71429deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(295.71429deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s12 {
+  -webkit-transform: rotateY(321.42857deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(321.42857deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .s13 {
+  -webkit-transform: rotateY(347.14286deg) translate3D(-50%, 0, 0.1625em);
+          transform: rotateY(347.14286deg) translate3D(-50%, 0, 0.1625em);
+}
+
+.book3d .cyl-1 .face, .book3d .cyl-1 .side {
+  background-color: #c00101;
+}
+/*# sourceMappingURL=auth-3d.css.map */

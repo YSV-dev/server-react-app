@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(d:\Soft\SERVER\REACT\auth\src\style\SASS\nullStyle.css);
+@import url(d:\Soft\SERVER\REACT\auth\src\style\SASS\auth.css);
+@import url(d:\Soft\SERVER\REACT\auth\src\style\SASS\auth-3d.css);
+@import url(d:\Soft\SERVER\REACT\auth\src\style\SASS\3d.css);
+@import url(d:\Soft\SERVER\REACT\auth\src\style\SASS\logo.css);
+@import url(d:\Soft\SERVER\REACT\auth\src\style\SASS\hud.css);
+@import url(d:\Soft\SERVER\REACT\auth\src\style\generalAnimations.css);
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #e6e6e6;
+  padding: 5px;
+}
+
+hr {
+  border: none;
+  /* Убираем границу для браузера Firefox */
+  color: #830000;
+  /* Цвет линии для остальных браузеров */
+  background-color: #830000;
+  /* Цвет линии для браузера Firefox и Opera */
+  height: 3px;
+  /* Толщина линии */
+}
+/*# sourceMappingURL=style.css.map */

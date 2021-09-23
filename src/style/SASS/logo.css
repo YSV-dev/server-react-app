@@ -1,0 +1,36 @@
+.logo {
+  color: #a30000;
+  text-transform: uppercase;
+  font-size: 250%;
+  -webkit-animation-name: logo_animation;
+          animation-name: logo_animation;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes logo_animation {
+  0% {
+    color: #a30000;
+  }
+  50% {
+    color: #ce0000;
+  }
+  100% {
+    color: #a30000;
+  }
+}
+
+@keyframes logo_animation {
+  0% {
+    color: #a30000;
+  }
+  50% {
+    color: #ce0000;
+  }
+  100% {
+    color: #a30000;
+  }
+}
+/*# sourceMappingURL=logo.css.map */

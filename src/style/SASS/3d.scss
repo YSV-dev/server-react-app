@@ -1,0 +1,42 @@
+.shape, .face, .face-wrapper, .cr {
+    position: absolute;
+    transform-style: preserve-3d;
+}
+.scene3d {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.shape {
+    width: 0;
+    height: 0;
+    transform-origin: center center;
+}
+.face, .face-wrapper {
+    overflow: hidden;
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+}
+.face {
+    background-size: 100% 100%!important;
+    background-position: center;
+}
+.face-wrapper .face {
+    left: 100%;
+    width: 100%;
+    height: 100%
+}
+.photon-shader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+.side {
+    left: 50%;
+}
+.cr, .cr .side {
+    height: 100%;
+}

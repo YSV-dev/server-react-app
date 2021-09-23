@@ -1,0 +1,15 @@
+@keyframes blinker {
+  0% { opacity: 0.5; }
+  50% { opacity: 1.0; }
+  100% { opacity: 0.5; }
+}
+
+.fadeOut{
+  opacity:0;
+  transition: 0.5s;
+}
+
+.fadeIn{
+  opacity:1;
+  transition: 0.5s;
+}

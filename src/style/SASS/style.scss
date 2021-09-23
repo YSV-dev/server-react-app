@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import "nullStyle.css";
+@import "auth.css";
+@import "auth-3d.css";
+@import "3d.css";
+@import "logo.css";
+@import "hud.css";
+@import "../generalAnimations.css";
+
+$mainColor: #c00101;
+$darkMainColor: #830000;
+$textColor: #b3b3b3;
+$inputTextColor: #e6e6e6; 
+$buttonTextColor: #ffffff;
+$windowBG: #1a1a1a;//#0e0e0e
+$menuBG: #1a1a1a;
+
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	color: $inputTextColor;
+	padding: 5px;
+}
+
+hr {
+	border: none; /* Убираем границу для браузера Firefox */
+    color: $darkMainColor; /* Цвет линии для остальных браузеров */
+    background-color: $darkMainColor; /* Цвет линии для браузера Firefox и Opera */
+    height: 3px; /* Толщина линии */
+}
+
+
+ 

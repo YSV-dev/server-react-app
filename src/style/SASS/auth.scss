@@ -1,0 +1,272 @@
+$mainColor: #c00101;
+$darkMainColor: #830000;
+$textColor: #b3b3b3;
+$inputTextColor: #e6e6e6;
+$buttonTextColor: #ffffff;
+$windowBG: #1a1a1a;//0e0e0e
+$menuBG: #1a1a1a;
+
+.page {
+    width: 100%;
+    height: 100vh;
+    margin: auto; 
+    overflow: none;
+}
+
+p{
+    color: $inputTextColor;
+}
+
+@keyframes form-center-animation{
+    from{
+        transform: translate(0,-200%);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+.auth{
+    .form-full-screen {
+        background-color: $windowBG;
+        width: 100%;
+        height: 100vh;
+    }
+    .form-left, .form-center {
+        position: relative;
+        min-width: 500px;
+        height: 100%;
+        z-index: 1;
+        background: $windowBG;
+        width: 50%;
+        margin: auto;
+        padding: 0px;
+        text-align: center;
+        border: 1px solid #111;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        animation-name: form-center-animation;
+        animation-duration: 1.25s;
+        transition: width 2s;
+
+        .content-form{
+            padding: 45px;
+        }
+        .content{
+            height: 100%;
+            padding: 0;
+            margin: 0; 
+            border: 1px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+
+    .form-left {
+        display: inline-flex;
+        overflow: auto;
+        padding: 0px;
+        max-height: 100vh;
+        margin: -1%;
+        margin-top: 5%;
+        height: 100%;
+        .content{
+            overflow: auto;
+            padding: 10px;
+        }
+        .content-page {
+            min-height: 150px; 
+            min-width: 0%;
+        }
+        .menu {
+            position: relative;
+            overflow: auto;
+            height: 100vh;
+            width: 40%;
+            min-width: 30%;
+            background: $menuBG;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            .menu-header {
+                border-bottom: 1px solid
+            }
+            .footer{
+                margin-top: 1%;
+                width: 100%;
+                position: absolute;
+                bottom:0; 
+                left:0;
+            }
+            input{
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+    }
+
+    input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: transparent;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid $mainColor;
+        color: $inputTextColor;
+        text-align: center;
+        margin: 0 0 15px;
+        padding: 5px;
+        padding-top: 15px;
+        box-sizing: border-box;
+        font-size: 15px;
+        text-transform: uppercase;
+        transition-duration: 0.25s;
+        &:hover, &:focus{
+            border-color: $inputTextColor;
+        }
+    }
+
+    .menu_button_center {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        background: $mainColor;
+        width: 104%;
+        min-width: 104%;
+        min-height: 35px;
+        margin-top: 5px;
+        margin-left: -2%;
+        align-self: center;
+        border: 0;
+        padding: 10px;
+        color: $buttonTextColor;
+        font-size: 14px;
+
+        cursor: pointer;
+        transition-duration: 0.5s;
+        &:hover, &:active, &:focus {
+            background: $darkMainColor;
+            transform: scale(1.01, 1.01);
+        }
+    }
+
+    .message {
+        margin: 15px 0 0;
+        color: $textColor;
+        font-size: 12px;
+        a {
+            color: $mainColor;
+            text-decoration: none;
+            transition-duration: 0.5s;
+            &:hover {
+                color: $darkMainColor;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .error{
+        color: #EF3B3A;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+
+    .authFolder{
+        transform-style: preserve-3d;
+        left: 1%;
+        z-index: 300;
+        position: relative;
+        transition: 1s;
+        perspective: 3000px;
+
+        .element{
+            transform-style: preserve-3d;
+            position: absolute;
+            transform-origin: center left;
+            transition: 0.5s;
+            filter: drop-shadow(5px 3px 1px rgba(0,0,0,0.2));
+            background-size: 100%;
+            border: solid 1px #ddd;
+            
+            min-width: 1200px;
+            min-height: 1600px;
+        }
+
+        .back{
+            z-index: 0;
+        }
+
+        .paper{
+            transform-origin: bottom left;
+            transform: rotateZ(0deg);
+            z-index: 1;
+        }
+
+        .up_{
+            transform: rotateY(-0.1deg) rotateX(180deg) scale(1, -1);
+            z-index: 2;
+        }
+
+        .up{
+            transform: rotateY(-0.1deg);
+            z-index: 3;
+        }
+
+        &.opened {
+            .paper{
+                transform-origin: bottom left;
+                z-index: 101;
+            }
+    
+            .up_{
+                transform: rotateY(-180deg) rotateX(180deg) scale(1, -1);
+                z-index: 102;
+            }
+    
+            .up{
+                transform: rotateY(-180deg);
+                z-index: 103;
+            }
+        }
+
+        &:not(.opened){
+            &:hover  {
+                .up, .up_{
+                    filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.2));
+                }
+
+                .up_{
+                    transform: rotateY(-30deg) rotateX(180deg) scale(1, -1);
+                    z-index: 2;
+                }
+
+                .up{
+                    transform: rotateY(-30deg);
+                    z-index: 3;
+                }
+
+                .paper{
+                    transform: rotateZ(2deg);
+                }
+            }
+        }
+    }
+
+    .account-menu{
+        display: grid;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .menu-element{
+            min-width: 100px; 
+            min-height: 100px;
+            padding: 1em;
+            margin: 1em;
+            transition: 0.5s;
+        }
+
+        .menu-element:hover{
+            transform: scale(1.05)
+        }
+    }
+}
